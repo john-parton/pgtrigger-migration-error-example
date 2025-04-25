@@ -1,0 +1,14 @@
+services:
+
+  db:
+    image: postgres:16.6
+    shm_size: 1g
+    ports:
+      - "5436:5432"
+    environment:
+      - POSTGRES_USERNAME
+      - POSTGRES_PASSWORD
+
+volumes:
+  esdata1:
+    driver: local
