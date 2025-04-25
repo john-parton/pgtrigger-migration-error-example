@@ -1,0 +1,7 @@
+- Clone down repo.
+- Install deps (uv sync)
+- Enable virtualenv - `. .venv/bin/active`
+- Make sure environmental variables from .env are loaded (direnv)
+- Start example postgres server - `docker compose up`
+- Sync migrations `manage.py migrate`
+- Create new migration `manage.py makemigrations` -- Error will occur here
